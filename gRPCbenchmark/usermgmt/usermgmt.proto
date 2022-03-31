@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package usermgmt;
+
+option go_package = "goproject/2ndgRPCvsREST/gRPCbenchmark;gRPCbenchmark";
+
+service UserManagement{
+  rpc CreateNewUser (NewUser) returns (User){}
+}
+
+message NewUser{
+  string name = 1;
+  int32 age = 2;
+}
+
+message User{
+  string name = 1;
+  int32 age = 2;
+  int32 id = 3;
+  string inactendd = 4;
+  string error = 5;
+  string retailer = 6;
+  string class = 7;
+  string actendd = 8;
+  string adminst = 9;
+  string creditvioce = 10;
+  string code = 11;
+  string phone = 12;
+  string rbal = 13;
+}
